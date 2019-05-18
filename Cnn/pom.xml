@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>com.webAutomation</groupId>
-            <artifactId>Generic</artifactId>
+            <artifactId>generic</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

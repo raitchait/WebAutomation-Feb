@@ -12,6 +12,7 @@
         <module>Generic</module>
         <module>Cnn</module>
         <module>facebook</module>
+        <module>ebay</module>
     </modules>
 
     <dependencyManagement>
