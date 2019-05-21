@@ -10,9 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>Cnn</module>
-        <module>facebook</module>
-        <module>ebay</module>
+<module>ebay</module>
     </modules>
 
     <dependencyManagement>

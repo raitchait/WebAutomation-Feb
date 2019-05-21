@@ -15,7 +15,7 @@
 
     <test name="Name Test Home">
         <classes>
-            <class name="regressionTest.TestHomepage"/>
+            <class name="regression.Search"/>
         </classes>
     </test>
 </suite>

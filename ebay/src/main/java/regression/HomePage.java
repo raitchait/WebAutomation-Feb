@@ -6,4 +6,5 @@ public class HomePage extends CommonAPI {
         System.out.println(driver.getTitle());
 
     }
+
 }
