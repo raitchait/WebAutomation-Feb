@@ -1,21 +1,28 @@
 package regressionTest;
 
+import base.CommonAPI;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import regression.HomePage;
+import reporting.TestLogger;
 
-public class TestHomepage extends HomePage {
+public class TestHomepage extends CommonAPI {
+    HomePage homePage;
+    String url = "https://www.ebay.com/";
+    private Object ApplicationLog;
 
-    @Test(priority = 1)
-            public static void homepage(){
-        Homepage1( );
-
+    @BeforeMethod
+    public void initializing() {
+        driver.get( url );
+        homePage = PageFactory.initElements( driver, HomePage.class );
     }
-@Test(priority = 2)
-    public static void login(){
-
-}
-@Test(priority = 3)
-public static void CrateAccount(){
-
-}
+    @Test
+    public void verifywebAdress() {
+        TestLogger.log( getClass().getSimpleName() + ": " + convertToString( new Object() {
+        }.getClass().getEnclosingMethod().getName() ) );
+        String url = driver.getCurrentUrl();
+        Assert.assertEquals( "https://www.ebay.com/", url );
+    }
 }

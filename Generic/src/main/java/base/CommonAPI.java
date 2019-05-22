@@ -103,9 +103,9 @@ public class CommonAPI {
      */
     public static WebDriver getLocalDriver(String browserName, String platform) {
         if (platform.equalsIgnoreCase("mac") && browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "../Generic/src/main/resources/drivers/chromedriver1");
+            System.setProperty("webdriver.chrome.driver", "../Generic/src/main/resources/drivers/chromedriver");
         } else if (platform.equalsIgnoreCase("windows") && browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "../Generic/src/main/resources/drivers/chromedriver1.exe");
+            System.setProperty("webdriver.chrome.driver", "../Generic/src/main/resources/drivers/chromedriver.exe");
         }
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
